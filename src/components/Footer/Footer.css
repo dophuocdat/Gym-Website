@@ -1,0 +1,54 @@
+/*make variables*/
+:root {
+  --lightgray: #d9d9d9;
+  --gray: #9c9c9c;
+  --orange: #f48915;
+  --darkGrey: #464d53;
+  --caloryCard: #656565;
+  --planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+  --appColor: #3c3f45;
+}
+
+.Footer-container {
+  position: relative;
+}
+.Footer-container .blur-f1 {
+  bottom: 0;
+  right: 15%;
+  width: 26rem;
+  height: 12rem;
+  filter: blur(200px);
+  background: red;
+}
+.Footer-container .blur-f2 {
+  bottom: 0;
+  left: 15%;
+  width: 26rem;
+  height: 12rem;
+  filter: blur(200px);
+  background: rgb(210, 144, 89);
+}
+.Footer-container hr {
+  border: 1px solid var(--lightgray);
+}
+.Footer-container .footer {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  height: 20rem;
+}
+.Footer-container .footer .social-link {
+  display: flex;
+  gap: 4rem;
+}
+.Footer-container .footer .social-link > img {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.Footer-container .footer .logo-f > img {
+  width: 10rem;
+}

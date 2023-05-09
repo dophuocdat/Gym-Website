@@ -1,0 +1,98 @@
+:root {
+    --lightgray: #d9d9d9;
+    --gray: #9c9c9c;
+    --orange: #f48915;
+    --darkGrey: #464d53;
+    --caloryCard: #656565;
+    --planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+    --appColor: #3c3f45;
+}
+
+.Programs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; // gap between elements
+    padding: 0 2rem; // padding on the left and right
+
+    .programs-header {
+        display: flex;
+        gap: 5rem;
+        font-weight: bold;
+        font-size: 3rem;
+        justify-content: center;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .programs-categories {
+        display: flex;
+        gap: 1rem;
+
+        .categrory {
+            display: flex;
+            flex-direction: column;
+            background-color: gray;
+            padding: 2rem;
+            gap: 1rem;
+            color: white;
+            justify-content: space-between;
+
+            :nth-child(1) {
+                width: 2rem;
+                height: 2rem;
+                fill: white;
+                /* fill color of svg */
+            }
+
+            :nth-child(2) {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+
+            :nth-child(3) {
+                font-size: 0.9rem;
+                line-height: 25px;
+            }
+
+            .join-now {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+
+                span {
+                    display: flex;
+                    width: 5rem;
+                    align-items: center;
+                }
+                img {
+                    width: 1rem;
+                }
+            }
+
+            &:hover {
+                background: var(--planCard);
+                cursor: pointer;
+                .join-now>img{
+                    transform: translateX(1rem);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Programs{
+        .programs-header{
+            flex-direction: column;
+            gap: 1rem;
+            font-size: x-large;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        .programs-categories{
+            flex-direction: column;
+            
+        }
+    }
+}

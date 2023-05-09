@@ -1,0 +1,110 @@
+/*make variables*/
+:root {
+  --lightgray: #d9d9d9;
+  --gray: #9c9c9c;
+  --orange: #f48915;
+  --darkGrey: #464d53;
+  --caloryCard: #656565;
+  --planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+  --appColor: #3c3f45;
+}
+
+.Testimonials {
+  display: flex;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+.Testimonials .left-t {
+  display: flex;
+  flex: 1 1;
+  gap: 2rem;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: white;
+}
+.Testimonials .left-t > :nth-child(1) {
+  color: var(--orange);
+  font-weight: bold;
+}
+.Testimonials .left-t > :nth-child(2), .Testimonials .left-t > :nth-child(3) {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.Testimonials .left-t > :nth-child(4) {
+  text-transform: none;
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+.Testimonials .right-t {
+  flex: 1;
+  position: relative;
+}
+.Testimonials .right-t > img {
+  position: absolute;
+  width: 17rem;
+  height: 20rem;
+  object-fit: cover;
+  right: 8rem;
+  top: 2rem;
+}
+.Testimonials .right-t > :nth-child(1) {
+  position: absolute;
+  width: 17rem;
+  height: 20rem;
+  border: 2px solid orange;
+  background-color: transparent;
+  right: 9rem;
+  top: 0.9rem;
+}
+.Testimonials .right-t > :nth-child(2) {
+  position: absolute;
+  width: 17rem;
+  height: 19rem;
+  top: 4rem;
+  right: 7rem;
+  background: var(--planCard);
+}
+.Testimonials .right-t .arrows {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 3rem;
+}
+.Testimonials .right-t .arrows > img {
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .Testimonials {
+    flex-direction: column;
+  }
+  .Testimonials .left-t > :nth-child(2),
+.Testimonials .left-t > :nth-child(3) {
+    font-size: xx-large;
+  }
+  .Testimonials .right-t {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .Testimonials .right-t > div {
+    position: relative;
+    display: none;
+  }
+  .Testimonials .right-t > img {
+    top: 0;
+    right: 0;
+    position: relative;
+    align-self: center;
+  }
+  .Testimonials .right-t > :last-child {
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+}
